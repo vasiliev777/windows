@@ -14,3 +14,8 @@ services:
       - 3389:3389/tcp
       - 3389:3389/udp
     stop_grace_period: 2m
+    deploy:
+      resources:
+        limits:
+          cpus: "16"
+          memory: "8g"
